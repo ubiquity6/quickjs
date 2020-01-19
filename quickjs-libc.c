@@ -48,6 +48,12 @@
 #if defined(__APPLE__)
 typedef sig_t sighandler_t;
 #endif
+
+#if defined(__EMSCRIPTEN__)
+#include <signal.h>
+typedef sig_t sighandler_t;
+#endif
+
 #endif
 
 #include "cutils.h"
