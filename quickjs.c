@@ -40191,7 +40191,7 @@ static JSValue js_math_hypot(JSContext *ctx, JSValueConst this_val,
         for(i = 0; i < argc; i++) {
             if (JS_ToFloat64(ctx, &a, argv[i]))
                 return JS_EXCEPTION;
-            r += a;
+            r += a*a;
         }
         r = sqrt(r);
     }

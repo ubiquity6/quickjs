@@ -1,0 +1,5 @@
+U6 changelog
+============
+
+- Emscripten support in quickjs-libc for <signal.h>
+- Patch Math.hypot function to square arguments
